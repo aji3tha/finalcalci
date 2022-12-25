@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 export const StyledButton = styled.button` 
 width:25%;
-padding:10px;
 margin:5px;
 border-radius:10px;
 border:none;
@@ -13,7 +12,9 @@ input{
     font-size: 18px;
     border:none;
     background-color:Transparent;
-    color:white;  
+    color:white; 
+        width: 67px;
+    height: 43px;
 }
 &.equal{
     width:50%;
