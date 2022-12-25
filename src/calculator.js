@@ -15,13 +15,6 @@ import React from "react";
     <input value ={props.value} type="text" className='screen' placeholder='0' readOnly ></input>
   )
 }
-// const DisplyCal = (props) => {
-//   return (
-//     <div> <Display value = {props.typing}></Display>
-//       <Display value = {props.result}></Display>
-//       </div>
-//   )
-// }
  const ButtonValue = (props) => {
   return (
     <div><input type="button" value={props.BtnValue} onClick = {props.handleClick}/>
