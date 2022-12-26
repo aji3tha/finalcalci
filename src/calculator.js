@@ -78,11 +78,7 @@ class CalculatorApp extends React.Component {
   }
   render() {
     var Typings = this.state.typing;
-    let row1 = ['Clear', 'Del', '%', '/'];
-    let row2 = ['7', '8', '9', '*'];
-    let row3 = ['4', '5', '6', '-'];
-    let row4 = ['1', '2', '3', '+'];
-    let row5 = ['0', '.', '='];
+    let row1 = [ 'Clear','Del','%','/','7','8','9','*','4','5','6','-','1','2','3','+','0','.','=', ];
     return (
       <SectionStyle>
         <Title value="My calculator"></Title>
@@ -94,34 +90,6 @@ class CalculatorApp extends React.Component {
           <div className="button-container">
             <div class="new-btn">
               {row1.map((item) => {
-                return (
-                  <ButtonValue handleClick={this.handleClick} BtnValue={item} />
-                );
-              })}
-            </div>
-            <div class="new-btn">
-              {row2.map((item) => {
-                return (
-                  <ButtonValue handleClick={this.handleClick} BtnValue={item} />
-                );
-              })}
-            </div>
-            <div class="new-btn">
-              {row3.map((item) => {
-                return (
-                  <ButtonValue handleClick={this.handleClick} BtnValue={item} />
-                );
-              })}
-            </div>
-            <div class="new-btn">
-              {row4.map((item) => {
-                return (
-                  <ButtonValue handleClick={this.handleClick} BtnValue={item} />
-                );
-              })}
-            </div>
-            <div class="new-btn">
-              {row5.map((item) => {
                 return (
                   <ButtonValue handleClick={this.handleClick} BtnValue={item} />
                 );
