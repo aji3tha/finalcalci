@@ -78,7 +78,7 @@ class CalculatorApp extends React.Component {
   }
   render() {
     var Typings = this.state.typing;
-    let row1 = [ 'Clear','Del','%','/','7','8','9','*','4','5','6','-','1','2','3','+','0','.','=', ];
+    let btn = [ 'Clear','Del','%','/','7','8','9','*','4','5','6','-','1','2','3','+','0','.','=', ];
     return (
       <SectionStyle>
         <Title value="My calculator"></Title>
@@ -89,9 +89,9 @@ class CalculatorApp extends React.Component {
           </StyledDisplay>
           <div className="button-container">
             <div class="new-btn">
-              {row1.map((item) => {
+              {btn.map((value) => {
                 return (
-                  <ButtonValue handleClick={this.handleClick} BtnValue={item} />
+                  <ButtonValue handleClick={this.handleClick} BtnValue={value} />
                 );
               })}
             </div>
