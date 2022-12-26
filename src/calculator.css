@@ -10,6 +10,8 @@ body {
   vertical-align: middle;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  width: 360px;
 }
 .new-btn input {
   width: 80px;
