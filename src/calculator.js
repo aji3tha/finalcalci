@@ -1,5 +1,3 @@
-import StyledButton from './components/buttons/operator';
-import ButtonDiv from './components/buttons/BtnDiv';
 import { SectionStyle } from './components/Section';
 import { StyledDisplay } from './components/buttons/display';
 import React from 'react';
