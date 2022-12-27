@@ -1,6 +1,7 @@
 import { SectionStyle } from './components/Section';
 import { StyledDisplay } from './components/buttons/display';
 import React from 'react';
+import {BtnStyled} from './components/buttons/btnwithmap';
 const Title = (props) => {
   return (
     <div className="calculator-title">
@@ -76,7 +77,28 @@ class CalculatorApp extends React.Component {
   }
   render() {
     var Typings = this.state.typing;
-    let btn = [ 'Clear','Del','%','/','7','8','9','*','4','5','6','-','1','2','3','+','0','.','=', ];
+    let row = [
+      'Clear',
+      'Del',
+      '%',
+      '/',
+      '7',
+      '8',
+      '9',
+      '*',
+      '4',
+      '5',
+      '6',
+      '-',
+      '1',
+      '2',
+      '3',
+      '+',
+      '0',
+      '.',
+      '=',
+    ];
+
     return (
       <SectionStyle>
         <Title value="My calculator"></Title>
@@ -85,15 +107,39 @@ class CalculatorApp extends React.Component {
             <Display value={Typings}></Display>
             {/* <Display value = {this.state.result}></Display> */}
           </StyledDisplay>
-          <div className="button-container">
+          {/* Button iteration added by CSS */}
+          {/* <div className="button-container">
             <div class="new-btn">
-              {btn.map((value) => {
+              {row.map((value) => {
                 return (
-                  <ButtonValue handleClick={this.handleClick} BtnValue={value} />
+                  <ButtonValue
+                    handleClick={this.handleClick}
+                    BtnValue={value}
+                  />
                 );
               })}
             </div>
+          </div> */}
+{/* componet using for the iteration */}
+          <div className="button-container">
+            <BtnStyled>
+            <div class="new-btn">
+              {row.map((value) => {
+                return (
+                  <ButtonValue
+                    handleClick={this.handleClick}
+                    BtnValue={value}
+                  />
+                );
+              })}
+            </div>
+            </BtnStyled>
           </div>
+
+
+
+
+
         </div>
       </SectionStyle>
     );
