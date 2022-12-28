@@ -8,7 +8,7 @@ export const BtnStyled = styled.div`
   flex-wrap: wrap;
   width: 360px;
 }
-.new-btn input {
+& input {
   width: 80px;
   height: 43px;
   margin: 5px;
@@ -18,19 +18,18 @@ export const BtnStyled = styled.div`
   background-color: #000;
   cursor: pointer;
   color: #fff;
-}
-.new-btn input[value='='] {
+&:hover{opacity :0.5;}}
+& [value='='] {
   width: 170px;
-  background-color: #ee187f;
 }
-.new-btn input[value='+'],
-.new-btn input[value='-'],
-.new-btn input[value='-'],
-.new-btn input[value='*'],
-.new-btn input[value='/'],
-.new-btn input[value='Clear'],
-.new-btn input[value='Del'] {
+& [value='+'],
+& [value='-'],
+& [value='-'],
+& [value='*'],
+& [value='/'],
+& [value='Clear'],
+& [value='Del'],& [value='%'],& [value='='] {
   background-color: #ee187f;
-}`
+&:hover{opacity:0.8 }}`;
 
 export default BtnStyled;
